@@ -1,2 +1,2 @@
 # rps
-rock, paper, scisors... in Rust!
+A small implementation of the Rock, Paper, Scissors game programmed in rust.
