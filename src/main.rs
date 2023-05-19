@@ -57,8 +57,11 @@ fn main() {
     loop {
         let cpu_hand = rand::thread_rng().gen_range(0..=2);
         let mut player_hand = String::new();
-        println!("CPU hand: {}", cpu_hand);
 
+        #[cfg(debug_assertions)]{
+        println!("CPU hand: {}", cpu_hand);
+        }
+        
         io::stdin()
             .read_line(&mut player_hand)
             .expect("Failed to read line");
